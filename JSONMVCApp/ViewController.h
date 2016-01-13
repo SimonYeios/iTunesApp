@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "iTunesManager.h"
+#import "iTunesCommunicator.h"
+@interface ViewController : UIViewController<iTunesManagerDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property(strong, nonatomic) NSArray *entries;
+@property(strong, nonatomic) iTunesManager *manager; 
 
 
 @end

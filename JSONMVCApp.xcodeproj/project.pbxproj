@@ -14,6 +14,11 @@
 		13FBB8501B83FD27005BC189 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FBB84F1B83FD27005BC189 /* Images.xcassets */; };
 		13FBB8531B83FD27005BC189 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13FBB8511B83FD27005BC189 /* LaunchScreen.xib */; };
 		13FBB85F1B83FD27005BC189 /* JSONMVCAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FBB85E1B83FD27005BC189 /* JSONMVCAppTests.m */; };
+		13FBB86A1B83FD3A005BC189 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FBB8691B83FD3A005BC189 /* Entry.m */; };
+		13FBB8711B83FF7A005BC189 /* iTunesCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FBB8701B83FF7A005BC189 /* iTunesCommunicator.m */; };
+		13FBB8741B84012A005BC189 /* EntryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FBB8731B84012A005BC189 /* EntryBuilder.m */; };
+		13FBB8781B84C5CD005BC189 /* iTunesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FBB8771B84C5CD005BC189 /* iTunesManager.m */; };
+		13FBB87B1B84CA8B005BC189 /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FBB87A1B84CA8B005BC189 /* DetailCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,18 @@
 		13FBB8581B83FD27005BC189 /* JSONMVCAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONMVCAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FBB85D1B83FD27005BC189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13FBB85E1B83FD27005BC189 /* JSONMVCAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONMVCAppTests.m; sourceTree = "<group>"; };
+		13FBB8681B83FD3A005BC189 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		13FBB8691B83FD3A005BC189 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		13FBB86E1B83FF18005BC189 /* iTunesCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesCommunicatorDelegate.h; sourceTree = "<group>"; };
+		13FBB86F1B83FF7A005BC189 /* iTunesCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesCommunicator.h; sourceTree = "<group>"; };
+		13FBB8701B83FF7A005BC189 /* iTunesCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesCommunicator.m; sourceTree = "<group>"; };
+		13FBB8721B84012A005BC189 /* EntryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryBuilder.h; sourceTree = "<group>"; };
+		13FBB8731B84012A005BC189 /* EntryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryBuilder.m; sourceTree = "<group>"; };
+		13FBB8751B84C53C005BC189 /* iTunesManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesManagerDelegate.h; sourceTree = "<group>"; };
+		13FBB8761B84C5CD005BC189 /* iTunesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesManager.h; sourceTree = "<group>"; };
+		13FBB8771B84C5CD005BC189 /* iTunesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesManager.m; sourceTree = "<group>"; };
+		13FBB8791B84CA8B005BC189 /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		13FBB87A1B84CA8B005BC189 /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +98,11 @@
 		13FBB8411B83FD26005BC189 /* JSONMVCApp */ = {
 			isa = PBXGroup;
 			children = (
-				13FBB8461B83FD26005BC189 /* AppDelegate.h */,
-				13FBB8471B83FD27005BC189 /* AppDelegate.m */,
-				13FBB8491B83FD27005BC189 /* ViewController.h */,
-				13FBB84A1B83FD27005BC189 /* ViewController.m */,
-				13FBB84C1B83FD27005BC189 /* Main.storyboard */,
-				13FBB84F1B83FD27005BC189 /* Images.xcassets */,
-				13FBB8511B83FD27005BC189 /* LaunchScreen.xib */,
+				E4C226931C46F61E0038CDBC /* Model */,
+				E4C226941C46F6840038CDBC /* View */,
+				E4C226951C46F6A60038CDBC /* Controller */,
+				E4C226921C46F5F10038CDBC /* Protocols */,
+				E4C226961C46F6BC0038CDBC /* Resources */,
 				13FBB8421B83FD26005BC189 /* Supporting Files */,
 			);
 			path = JSONMVCApp;
@@ -117,6 +132,60 @@
 				13FBB85D1B83FD27005BC189 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4C226921C46F5F10038CDBC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				13FBB86E1B83FF18005BC189 /* iTunesCommunicatorDelegate.h */,
+				13FBB8751B84C53C005BC189 /* iTunesManagerDelegate.h */,
+				13FBB86F1B83FF7A005BC189 /* iTunesCommunicator.h */,
+				13FBB8701B83FF7A005BC189 /* iTunesCommunicator.m */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		E4C226931C46F61E0038CDBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13FBB8681B83FD3A005BC189 /* Entry.h */,
+				13FBB8691B83FD3A005BC189 /* Entry.m */,
+				13FBB8721B84012A005BC189 /* EntryBuilder.h */,
+				13FBB8731B84012A005BC189 /* EntryBuilder.m */,
+				13FBB8791B84CA8B005BC189 /* DetailCell.h */,
+				13FBB87A1B84CA8B005BC189 /* DetailCell.m */,
+				13FBB8761B84C5CD005BC189 /* iTunesManager.h */,
+				13FBB8771B84C5CD005BC189 /* iTunesManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E4C226941C46F6840038CDBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13FBB8511B83FD27005BC189 /* LaunchScreen.xib */,
+				13FBB84C1B83FD27005BC189 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E4C226951C46F6A60038CDBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13FBB8461B83FD26005BC189 /* AppDelegate.h */,
+				13FBB8471B83FD27005BC189 /* AppDelegate.m */,
+				13FBB8491B83FD27005BC189 /* ViewController.h */,
+				13FBB84A1B83FD27005BC189 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E4C226961C46F6BC0038CDBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13FBB84F1B83FD27005BC189 /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13FBB86A1B83FD3A005BC189 /* Entry.m in Sources */,
 				13FBB84B1B83FD27005BC189 /* ViewController.m in Sources */,
+				13FBB87B1B84CA8B005BC189 /* DetailCell.m in Sources */,
+				13FBB8741B84012A005BC189 /* EntryBuilder.m in Sources */,
+				13FBB8711B83FF7A005BC189 /* iTunesCommunicator.m in Sources */,
+				13FBB8781B84C5CD005BC189 /* iTunesManager.m in Sources */,
 				13FBB8481B83FD27005BC189 /* AppDelegate.m in Sources */,
 				13FBB8451B83FD26005BC189 /* main.m in Sources */,
 			);
@@ -416,6 +490,7 @@
 				13FBB8641B83FD27005BC189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13FBB8651B83FD27005BC189 /* Build configuration list for PBXNativeTarget "JSONMVCAppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +499,7 @@
 				13FBB8671B83FD27005BC189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
